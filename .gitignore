@@ -1,0 +1,5 @@
+#.gitignore#
+.mc-lists.el
+auto-save-list/
+url/
+*~
