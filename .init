@@ -30,10 +30,6 @@
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 
-;; make scrollbar a little slimmer
-;(setq 'scroll-bar-width 10)
-(add-to-list 'default-frame-alist (cons scroll-bar-width 10))
-
 ;; disable start message
 (setq inhibit-startup-message t)
 
@@ -49,6 +45,7 @@
  ;; If there is more than one, they won't work right.
  )
 
+; smaller default font
 (set-face-attribute 'default nil :height 110)
 
 ;; ido-mode
@@ -63,7 +60,8 @@
 (add-to-list 'sml/replacer-regexp-list '("^~/Documents/Bachelorarbeit/Arbeit/" ":BA:") t)
 
 
-;;;; custom key binding that dont belong to specific mode
+;;;; custom key binding that don't belong to specific mode
+; key bindings specific to a mode are positioned accordingly
 ;
 
 (global-set-key (kbd "C-x C-a") 'eval-buffer)
@@ -73,7 +71,7 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
-;;;; costom modes
+;;;; custom modes
 ;
 ;
 
@@ -98,6 +96,9 @@
 
 ;;; multitiple cursor mode
 (require 'multiple-cursors)
+
+;;; electric-pair-mode 
+(electric-pair-mode 1)
 
 ;;; wrap-region mode
 ; minor mode that wraps a region with punctuations.
@@ -323,6 +324,12 @@ Uses `current-date-time-format' for the formatting the date/time."
  '(delete-selection-mode nil)
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(mark-even-if-inactive t)
+ '(minimap-buffer-name " Sidebar")
+ '(minimap-hide-fringes t)
+ '(minimap-hide-scroll-bar t)
+ '(minimap-mode t)
+ '(minimap-width-fraction 0.075)
+ '(minimap-window-location (quote right))
  '(nxml-slash-auto-complete-flag t)
  '(org-agenda-files (quote ("~/blitzschach.org" "~/Studium/Bachelorarbeit/org/Treffen-Betreuer.org" "~/Documents/Notizen/friends.org" "~/todo.org")))
  '(package-archives (quote (("marmalade" . "http://marmalade-repo.org/packages/") ("gnu" . "http://elpa.gnu.org/packages/"))))
