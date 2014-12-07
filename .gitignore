@@ -1,4 +1,6 @@
-#.gitignore#
+#*
+session.*
+*.dat
 .mc-lists.el
 auto-save-list/
 url/
