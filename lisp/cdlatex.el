@@ -1460,6 +1460,9 @@ zZ
      "\\si{?}"             cdlatex-position-cursor nil nil t)
     ("SI"         "Insert \\SI{}{}"
      "\\SI{?}{}"           cdlatex-position-cursor nil nil t)
+    ("dfr"         "Insert \\dfrac{}{}"
+     "\\dfrac{?}{}"           cdlatex-position-cursor nil nil t)
+
     )
   "Default for cdlatex-command-alist.")
 
