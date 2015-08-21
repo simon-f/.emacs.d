@@ -1448,6 +1448,8 @@ zZ
      "\\int\\limits_{?}^{}"  cdlatex-position-cursor nil nil t)
     ("suml"       "Insert \\sum\\limits_{}^{}"
      "\\sum\\limits_{?}^{}"  cdlatex-position-cursor nil nil t)
+    ("prodl"       "Insert \\prod\\limits_{}^{}"
+     "\\prod\\limits_{?}^{}"  cdlatex-position-cursor nil nil t)
     ("nonum"      "Insert \\nonumber\\\\"
      "\\nonumber\\\\\n"      nil nil nil t)
     ("fn"         "Make a footnote"
@@ -1462,7 +1464,22 @@ zZ
      "\\SI{?}{}"           cdlatex-position-cursor nil nil t)
     ("dfr"         "Insert \\dfrac{}{}"
      "\\dfrac{?}{}"           cdlatex-position-cursor nil nil t)
-
+    ("kom"         "Insert \\kom{}{}"
+     "\\kom{?}{}"           cdlatex-position-cursor nil nil t)
+    ("bra"         "Insert \\bra{}"
+     "\\bra{?}"             cdlatex-position-cursor nil nil t)
+    ("ket"         "Insert \\ket{}"
+     "\\ket{?}"             cdlatex-position-cursor nil nil t)
+    ("bk"         "Insert \\bracket{}{}"
+     "\\bracket{?}{}"           cdlatex-position-cursor nil nil t)
+    ("me"         "Insert \\matrixel{}{}{}"
+     "\\matrixel{?}{}{}"           cdlatex-position-cursor nil nil t)
+    ("sst"        "Insert \\subset"
+     "\\subset"       nil nil t t)
+    ("sse"        "Insert \\subseteq"
+     "\\subseteq"       nil nil t t)
+    ("vec"         "Insert \\vec{}"
+     "\\vec{?}"             cdlatex-position-cursor nil nil t)
     )
   "Default for cdlatex-command-alist.")
 
